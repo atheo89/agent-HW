@@ -1,0 +1,6 @@
+# .gitignore
+.venv/
+.DS_Store
+__pycache__/
+solution.py
+test.py
