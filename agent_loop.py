@@ -481,15 +481,7 @@ while attempt <= max_attempts:
         # PROMPT EVOLUTION
         # -------------------------------------------------
 
-        task += f"""
-
-The previous attempt failed.
-
-ERROR:
-{result.stderr}
-
-Please fix the issue and try again.
-"""
+        task += f"\nThe code failed with this error:\n{result.stderr}"
 
         tracer.log(
             "prompt_updated",
